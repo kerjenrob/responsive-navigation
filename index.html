@@ -19,8 +19,8 @@
             <li class="pages"><a href="/pages/contact.html">Contact</a></li>
             <li class="pages"><a href="/pages/news.html">News</a></li>
             <li class="pages"><a href="/pages/order.html">Order</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction ()">
-                <!-- what funtion?-->
+            <li><a href="javascript:void(0);" class="icon" id="menu" onclick="show ()">
+                <!-- ? -->
                 <i class="fa fa-bars"></i></a></li>
         </ul>
     </nav>
@@ -28,5 +28,16 @@
         <h1>Home</h1>
         <p>Navigation bar for different browsers</p>
     </div>
+
+    <script>
+        function show() { /*No clue!*/
+            let drop = document.getElementById("menu");
+            if (drop.className === "nav") {
+                drop.className += " responsive";
+            } else {
+            drop.className = "nav";
+            }
+        }
+    </script>
 </body>
 </html>
